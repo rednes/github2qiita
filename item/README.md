@@ -6,6 +6,7 @@ Qiitaの記事もGitで管理できた方が楽だよなーという思いもあ
 GitHubへのpushをトリガーにTravisCIを起動して、
 Qiitaの記事を自動で投稿＆更新できるようにしました。
 
+
 今回の記事を作成するにあたり、以下の記事を大いに参考にさせていただいています。
 
 - [GitHub 上のマークダウンを Travis CI 経由で Qiita に記事として投稿する](https://qiita.com/miya0001/items/5702a6e4bba0535582f9)
@@ -167,7 +168,7 @@ branches:
 
 `.travis.yml`を全部書くとこんな感じになります。
 
-```yaml:.tavis.yml
+```yaml:.travis.yml
 language: ruby
 rvm: 2.4.1
 branches:
