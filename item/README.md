@@ -78,7 +78,7 @@ end
 
 ```json:item/params.json
 {
-    "title": "Qiitaの記事をGitHubで管理してTravisCi経由で自動投稿する",
+    "title": "Qiitaの記事をGitHubで管理してTravisCI経由で自動投稿する",
     "tags": [
         {
             "name": "GitHub",
@@ -100,7 +100,7 @@ end
 そのIDの記事を更新するようにします。
 
 ```:item/ITEM_ID
-9c54607f9011aa5f891f
+2d76435434ac632fc6d4
 ```
 
 
