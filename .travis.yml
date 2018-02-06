@@ -1,0 +1,13 @@
+language: ruby
+rvm: 2.4.1
+branches:
+  only:
+  - master
+install: bundle install
+cache:
+  directories: vendor/bundle
+script:
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bundle exec ruby deploy/deploy.rb; fi
+env:
+  global:
+    secure: UYmBAmvoj3NAc1XmCiGUmp0zgmNwM2AX60Bd0x/M05i74ZOA8vUls91a2RAqeyRymjoXusaEa6q7IqILYn5TDNd6aLrMKwyEm49BiTa/kOsi1dxpInlAKbOH7FtuwELVzZXDBF/wA9Ky42qpWkDr0sEIP1UWjzEgZSlPfHC6pW0I95dKJRhiR8Ur7GufRUFzT6tyFR01Ngsydvuy7OWYoGyxWfiMp/NY5RAXzkemKJ8TgYxK+ADIypNm+TtZM+WI3oiP8oBrVpRoDaRPFRqzknbCCmv5tkE3d5axJtjJvCCvuJVy1kzBo/P55HHJPUvRcowfjjPGPv6YZgt8eBU8pYK/hdcfjJNNbzqrOmOugbLfQTU+pcvmxn1Jfr8e/J5wOb3qqfflDg2i7QabQDyiaiHFf1mN8/gh9PkelWbTIB3DCq9VKm/aLbaClcyyLBDcyeT1zo4rnTXZZxCCaVOeJkyH4O8E8Lu59bHNKXC9qp/SfyffxTR4K5QVy0vKq7A9/NeSJlOJVH18yTdz7fjhhKJmKVs/3sLrRQT6urG4Zm1hzc1B3utrMaIvwlIgBZgtwABViI7Z60vWl+KJFcM7A3leXcv8MnDpPGhc8EhU9xG4Du84eiLY0/Jeh1l/X10GsdjJ3W+mlgM5IbPyAye62/5ZROKQifQtcwSyS2QMJTA=

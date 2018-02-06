@@ -1,0 +1,17 @@
+{
+    "title": "Qiitaの記事をGitHubで管理してTravisCi経由で自動投稿する",
+    "tags": [
+        {
+            "name": "GitHub",
+            "versions": []
+        },
+        {
+            "name": "TravisCI",
+            "versions": []
+        }
+    ],
+    "coediting": false,
+    "gist": false,
+    "private": true,
+    "tweet": false
+}
