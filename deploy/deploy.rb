@@ -24,7 +24,7 @@ if File.exist?(ITEM_ID_FILE_PATH) then
   item_id = File.open(ITEM_ID_FILE_PATH) do |file|
     file.read
   end
-  client.update_item(item_id, params, headers)
+  p client.update_item(item_id, params, headers)
 else
-  client.create_item(params, headers)
+  p client.create_item(params, headers)
 end
