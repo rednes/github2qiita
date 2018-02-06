@@ -109,7 +109,7 @@ end
 - QIITA_TOKEN - 個人用アクセストークン
 
 そのため、メモしておいたQiitaの個人用アクセストークンを環境変数としてQIITA_TOKENに設定すれば、
-Qiita APIを利用して投稿できるようになります。
+ローカル環境から`item/README.md`の記事を投稿できるようになります。
 
 ```sh
 # 環境変数の設定
@@ -188,7 +188,7 @@ env:
 
 ## GitHubからTravisCI経由での投稿
 
-記事が書けたらまとめてコミットしてgit pushします。
+`item/README.md`に記事が書けたらまとめてコミットしてgit pushします。
 
 ```sh
 $ git add -A
